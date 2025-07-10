@@ -1,5 +1,6 @@
 import React from 'react';
 import './RecipeCard.css';
+import adoboImage from '../assets/Adobo.jpg';
 
 const RecipeCard = ({ recipe, onClick }) => {
   const getDifficultyColor = (difficulty) => {
@@ -23,7 +24,7 @@ const RecipeCard = ({ recipe, onClick }) => {
           alt={recipe.name} 
           className="recipe-image"
           onError={(e) => {
-            e.target.src = 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop';
+            e.target.src = adoboImage;
           }}
         />
         <div className="recipe-overlay">

@@ -7,6 +7,14 @@ import SearchBar from './components/SearchBar';
 import CategoryFilters from './components/CategoryFilters';
 import Footer from './components/Footer';
 
+// Import local images
+import adoboImage from './assets/Adobo.jpg';
+import sinigangImage from './assets/Sinigang.jfif';
+import pancitImage from './assets/pancit canton.jpg';
+import lecheFlanImage from './assets/Leche Flan.jpg';
+import lumpiaImage from './assets/Lumpia.jpg';
+import haloHaloImage from './assets/Halo-Halo.webp';
+
 // Filipino Recipe Data
 const filipinoRecipes = [
   {
@@ -17,7 +25,7 @@ const filipinoRecipes = [
     prepTime: "15 mins",
     cookTime: "45 mins",
     servings: 4,
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+    image: adoboImage,
     description: "Classic Filipino adobo with chicken, soy sauce, vinegar, and garlic.",
     ingredients: [
       "1 kg chicken, cut into pieces",
@@ -44,7 +52,7 @@ const filipinoRecipes = [
     prepTime: "20 mins",
     cookTime: "40 mins",
     servings: 6,
-    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+    image: sinigangImage,
     description: "Sour tamarind soup with pork and vegetables.",
     ingredients: [
       "1 kg pork belly, cut into pieces",
@@ -72,7 +80,7 @@ const filipinoRecipes = [
     prepTime: "25 mins",
     cookTime: "15 mins",
     servings: 4,
-    image: "https://images.unsplash.com/photo-1563379091339-03246963d4a9?w=400&h=300&fit=crop",
+    image: pancitImage,
     description: "Stir-fried noodles with vegetables and meat.",
     ingredients: [
       "500g pancit canton noodles",
@@ -103,7 +111,7 @@ const filipinoRecipes = [
     prepTime: "30 mins",
     cookTime: "45 mins",
     servings: 8,
-    image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop",
+    image: lecheFlanImage,
     description: "Creamy caramel custard dessert.",
     ingredients: [
       "10 egg yolks",
@@ -129,7 +137,7 @@ const filipinoRecipes = [
     prepTime: "40 mins",
     cookTime: "20 mins",
     servings: 6,
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+    image: lumpiaImage,
     description: "Crispy spring rolls with ground pork and vegetables.",
     ingredients: [
       "1 pack lumpia wrappers",
@@ -159,7 +167,7 @@ const filipinoRecipes = [
     prepTime: "20 mins",
     cookTime: "0 mins",
     servings: 4,
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop",
+    image: haloHaloImage,
     description: "Mixed dessert with shaved ice, sweet beans, and ice cream.",
     ingredients: [
       "4 cups shaved ice",

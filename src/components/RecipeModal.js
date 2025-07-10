@@ -1,5 +1,6 @@
 import React from 'react';
 import './RecipeModal.css';
+import adoboImage from '../assets/Adobo.jpg';
 
 const RecipeModal = ({ recipe, onClose }) => {
   const getDifficultyColor = (difficulty) => {
@@ -26,7 +27,7 @@ const RecipeModal = ({ recipe, onClose }) => {
             alt={recipe.name} 
             className="modal-image"
             onError={(e) => {
-              e.target.src = 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop';
+              e.target.src = adoboImage;
             }}
           />
           <div className="modal-title-section">

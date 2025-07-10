@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #FFE5F1 0%, #E8F4FD 50%, #F0F8FF 100%);
+  min-height: 100vh;
+  color: #4A4A4A;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Pastel Color Palette */
+:root {
+  --pastel-pink: #FFB6C1;
+  --pastel-blue: #B0E0E6;
+  --pastel-green: #98FB98;
+  --pastel-yellow: #F0E68C;
+  --pastel-purple: #DDA0DD;
+  --pastel-orange: #FFB347;
+  --soft-white: #FFF8F8;
+  --soft-gray: #F5F5F5;
+  --text-dark: #4A4A4A;
+  --text-light: #6B6B6B;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 932px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .header {
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .recipe-card {
+    margin: 0;
+  }
+  
+  .recipe-details {
+    flex-direction: column;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .ingredients-list, .instructions-list {
+    padding-left: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .category-filters {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category-filter {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+} 

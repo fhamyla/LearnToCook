@@ -1,0 +1,140 @@
+.header {
+  background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-purple) 100%);
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.header-decoration {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.floating-icon {
+  position: absolute;
+  font-size: 3rem;
+  animation: float 3s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.floating-icon:nth-child(1) {
+  top: 20px;
+  left: 20px;
+  animation-delay: 0s;
+}
+
+.floating-icon:nth-child(2) {
+  top: 80px;
+  right: 30px;
+  animation-delay: 1s;
+}
+
+.floating-icon:nth-child(3) {
+  bottom: 30px;
+  left: 50px;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 932px) {
+  .header {
+    padding: 30px 0;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .header-decoration {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+  }
+  
+  .floating-icon {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+  }
+} 

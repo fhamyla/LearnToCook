@@ -1,0 +1,101 @@
+.footer {
+  background: linear-gradient(135deg, var(--pastel-purple) 0%, var(--pastel-pink) 100%);
+  padding: 30px 0;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="85" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="25" cy="85" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-text {
+  flex: 1;
+}
+
+.footer-text p {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-text p:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.footer-links {
+  text-align: right;
+}
+
+.footer-links span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 932px) {
+  .footer {
+    padding: 25px 0;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .footer-text p {
+    font-size: 0.85rem;
+  }
+  
+  .footer-text p:first-child {
+    font-size: 0.95rem;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+  
+  .footer-links span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 0;
+  }
+  
+  .footer-text p {
+    font-size: 0.8rem;
+  }
+  
+  .footer-text p:first-child {
+    font-size: 0.9rem;
+  }
+  
+  .footer-links span {
+    font-size: 0.75rem;
+  }
+} 

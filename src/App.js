@@ -5,6 +5,7 @@ import RecipeGrid from './components/RecipeGrid';
 import RecipeModal from './components/RecipeModal';
 import SearchBar from './components/SearchBar';
 import CategoryFilters from './components/CategoryFilters';
+import Footer from './components/Footer';
 
 // Filipino Recipe Data
 const filipinoRecipes = [
@@ -229,6 +230,7 @@ function App() {
           onClose={closeModal} 
         />
       )}
+      <Footer />
     </div>
   );
 }

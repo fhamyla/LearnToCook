@@ -1,4 +1,4 @@
-# 🍽️ LearnToCook - Filipino Virtual Cookbook
+# 🍽️ Pinoy Plate - Filipino Virtual Cookbook
 
 A beautiful, responsive React web application featuring authentic Filipino recipes with a delightful pastel color theme. Perfect for cooking enthusiasts of all skill levels!
 

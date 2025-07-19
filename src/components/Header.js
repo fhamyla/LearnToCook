@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="header-text">
-            <h1>🍽️ LearnToCook</h1>
+            <h1>🍽️ Pinoy Plate</h1>
             <p className="subtitle">Filipino Virtual Cookbook for Beginners</p>
             <p className="description">
               Discover the rich flavors of Filipino cuisine with easy-to-follow recipes 
